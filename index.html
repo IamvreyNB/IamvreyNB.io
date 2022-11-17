@@ -19,7 +19,7 @@
     <script>
     if (location.href.indexOf("data=")>-1){
 	var data = decodeURIComponent(location.href.split("data=")[1]);
-	 $('.go-to-pay').attt('href','upwrp://uppayservice/?style=token&paydata=' + data).show();
+	 $('.go-to-pay').attr('href','upwrp://uppayservice/?style=token&paydata=' + data).show();
 	}else{
 	 $('.go-to-pay').text('请重新扫码！')
 	}
